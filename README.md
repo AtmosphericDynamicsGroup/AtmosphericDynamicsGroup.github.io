@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+## Welcome to Atmospheric Dyanmics Group
 
-You can use the [editor on GitHub](https://github.com/AtmosphericDynamicsGroup/AtmosphericDynamicsGroup.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+We are from the Earth System Science Programme at the Chinese University of Hong Kong. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We research the dynamics of atmospheric phenomena from severe rainstorms, tropical cyclones, monsoons, El Niño to the impacts of global warming, making use of comprehensive Earth System models at a variety of scales.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AtmosphericDynamicsGroup/AtmosphericDynamicsGroup.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+This page is current managed by Paul Yeung. Shall you have any questions, feel free to contact us via atmo.dyn.github@gmail.com
