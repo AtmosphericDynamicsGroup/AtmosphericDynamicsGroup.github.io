@@ -1,1 +1,257 @@
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Atmospheric Dynamics Group">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Atmospheric Dyanmics Group</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://AtmosphericDynamicsGroup.github.io/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/favicon-16x16.png">
+<link rel="manifest" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/site.webmanifest">
+<link rel="mask-icon" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/csssafari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <!-- font family import -->
+<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap" rel="stylesheet">
+<link href="https://AtmosphericDynamicsGroup.github.io/css/carousel.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {       
+          font-size: 3.5rem;
+        }
+      }
+      
+      h1 {
+      	font-family:'Biryani', sans-serif;
+        font-weight: bold;
+        font-size:34pt;
+    }
+      h2 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      h3 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      h4 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      h5 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      p{
+        text-align:justify;
+        }
+      body {
+      	font-family: 'Bitter', sans-serif;
+        color: black;
+        font-size:12pt;
+    }	
+      footer {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      ul {
+    margin-top: 0;
+  }
+      li {
+    margin-top: 0;
+  }
+  	  html, body {
+    height:0px;
+    padding:0;
+    margin:0;
+}
+      .carousel {
+          margin-bottom: 0rem;
+      }
+      hr.solid {
+  border-top: 5px solid #bbb;
+}
+    </style>
+
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+  
+<header>
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://atmosphericdynamicsgroup.github.io/"><img src="https://www.cuhk.edu.hk/sci/essc/images/ESSC_logo_t.gif" style="max-width:40px;"></a>      
+      <a class="navbar-brand" href="https://atmosphericdynamicsgroup.github.io/">Atmospheric Dynamics Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://atmosphericdynamicsgroup.github.io/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Opportunities</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-black active" href="https://atmosphericdynamicsgroup.github.io/database.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Database
+        	</a>
+      		<div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+            	<a class="dropdown-item bg-black text-white" href="https://atmosphericdynamicsgroup.github.io/database.html">Contents</a>
+            <div class="dropdown-divider" style="border-color:white"></div>          
+            	<a class="dropdown-item bg-black text-white" href="https://atmosphericdynamicsgroup.github.io/database/cmip6.html">CMIP6</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Exposure</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    </div>
+    <div class="carousel-inner">
+        <img style="max-height: 100vh; max-width100%; height: 340px; width: 100%; object-fit: cover; background-position: center;
+    background-size: cover;" src="https://AtmosphericDynamicsGroup.github.io/img/database_banner.jpg" class="img-fluid" alt="Responsive image">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 style="font-family:'Biryani', sans-serif; font-size:4.5vw; text-align:center;" ><b>Bias-corrected CMIP6 Data</b></h1>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+    <br>
+    <a href="https://cloud.itsc.cuhk.edu.hk/mycuform/view.php?id=1192011" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">Download Application</a>
+    </div>
+  </div>
+</div>
+
+<section>
+<div class="container">
+<br>
+<hr class="solid">
+<h1 style="font-size:21pt;">Description
+</h1>
+<br>
+<p style="font-size:11pt;">The bias-corrected CMIP6 global dataset for dynamical downscaling of the Earth’s historical and future climate (1979–2100) is now available. This dataset provides high-quality large-scale forcing for dynamical downscaling simulations and will improve the reliability of future projections of the regional climate and environment.</p>
+<p style="font-size:11pt;">
+The traditional dynamical downscaling introduces biases that come from the boundary. To correct the biases, a series of steps are carried out. The method of correction decomposes the General Circulation Model (GCM) and reanalysis data into long-term trends and anomalies.</p>
+
+<p style="font-size:11pt;">The long-term trends are computed using the multimodel ensemble (MME) mean derived from 18 CMIP6 models over historical and future time periods. In order to preserve the internal climate variability,  one of the CMIP6 models is used to compute the anomalies. The high-resolution version of the MPI-M Earth system model (MPI-ESM1-2-HR), which is configured with a horizontal grid spacing of 100km in the atmosphere and 40km in the ocean, is used to produce the weather and interannual variability of the six-hourly large-scale forcing data. The data contain the upper air temperature, zonal wind, meridional wind, relative humidity, geopotential height, surface pressure, sea-level pressure, and sea surface temperature. The reanalysis dataset from 1979 to 2014 is retrieved from ECMWF ERA5. Both datasets were re-gridded to a horizontal grid spacing of (1.25° x 1.25°) using bilinear interpolation.
+</p>
+<p style="font-size:11pt;"><i><b>GCM variance bias corrections</b></i></p>
+<p style="font-size:11pt;">The two datasets (GCM and ERA) can then be broken down into a long-term non-linear trend and an interannual perturbation term for each six-hour period and day of the year. The non-linear trend was computed using the ensemble empirical model decomposition (EEMD) method, excluding the long-term non-linear trend in the perturbation term. Since GCM may contain bias, that is measured by the ratio of the GCM variance to the reanalysis variance, in the amplitude of the interannual variations. In order to correct the variance bias, a scaling factor, which is the ratio of the standard deviation of the detrended reanalysis data to that of the detrended GCM data over the historical time period, can be multiplied to the perturbation term by assuming the variance bias remains the same from the historical period to a future period. Since the standard deviations are computed using the detrended data, the variance of the interannual and interdecadal variations are adjusted so that the non-linear trend remained unchanged. It is noted that the anomaly of the detrended HCM data at each six-hourly interval/day of the year is computed by subtracting the climatological mean of the detrended data from the detrended GCM data, before correcting the variance biases. The standard deviation of each six-hour interval and day of the year was calculated across 36 years from 1979 to 2014. The original standard deviation with all 36 years of data is first computed. Then the standard deviation is recalculated after removing the years with anomalies greater than three times of the original standard deviation. This helps remove the effects of the extreme events on the data, for instance, the unrealistic ratios of the standard deviation.</p>
+<p style="font-size:11pt;"><i><b>GCM mean bias correction
+</i></b></p>
+<p style="font-size:11pt;">After that, the long-term non-linear trend derived from the single GCM is replaced by that derived from the MME, so the GCM data is then the sum of the long-term non-linear trend derived from MME with the EEMD over the historical-future time period and the GCM perturbation term multiplied by the scaling factor. The mean bias of the long-term trend of the GCM data relative to that of the reanalysis dataset over the historical period is removed to correct the GCM mean bias. Therefore, the bias-corrected six-hourly GCM data over the future period have a base climate provided by the reanalysis dataset over the historical period, with the change in future climate relative to the historical climatology generated by the MME and the future bias-corrected weather and climate variability derived from a single GCM.</p>
+<p style="font-size:11pt;">It is noted that the long-term non-linear trends are assumed to remain the same for each six-hourly/daily value of variables within the same month to save the computing time when using EEMD method for computing the non-linear trend. Thus, the climatological mean of the detrended data is not zero because the GCM outputs and the long-term non-linear GCM trend are derived from six-hourly data and monthly data respectively. </p>
+<p style="font-size:11pt; text-align:left">For details, please refer to this preprint:<br>Xu, Z., Y. Han, C.-Y. Tam, Z.-L. Yang and C. Fu, 2021: A bias-corrected CMIP6 global dataset. for dynamical downscaling of future climate, 1979–2100, <i>Scientific Data, submitted. </i>(Preprint DOI: <a href="https://www.researchsquare.com/article/rs-424811/v1">10.21203/rs.3.rs-424811/v1</a>) 
+<br>
+<hr class="solid">
+</div>
+</section>
+
+<section>
+<div class="container">
+<h1 style="font-size:21pt;">Download Application
+</h1>
+<br>
+<p style="font-size:11pt;">Please click <a href="https://cloud.itsc.cuhk.edu.hk/mycuform/view.php?id=1192011">here</a> or the "Download Application" button above to fill in the application form to request the data.</p>
+<p style="font-size:11pt;">
+Your request will be processed shortly once it is received. The processing time might vary, depending on the number of requests at the time.</p>
+<hr class="solid">
+</div>
+</section>
+
+<section>
+<div class="container">
+<h1 style="font-size:21pt;">Data Information
+</h1>
+<br>
+<p style="font-size:11pt;">The whole dataset is about 2 TB large.</p>
+<p style="font-size:11pt;">Please read the README.txt file to see the detailed descriptions for each folder. The data files in <span style="font-family:'Courier New';">.nc4</span> format and some scripts in FORTRAN are provided.</p>
+
+<p style="font-size:11pt;">Please note that two attributes, <span style="font-family:'Courier New';">scale_factor</span> and <span style="font-family:'Courier New';">add_offset</span>, should be used to unpack the variables of the compressed NetCDF data.</p>
+
+<p style="font-size:11pt;">A FORTRAN code is provided to convert the compressed NetCDF files to WRF intermediate files. The scripts for correcting the CMIP6 data biases are also provided in the dataset.</p>
+
+<p style="font-size:11pt;">For detailed usage of the files, please refer to the "Usage Notes" Section in the <a href="https://www.researchsquare.com/article/rs-424811/v1">preprint</a>.</p>
+<hr class="solid">
+</div>
+</section>
+
+<section>
+<div class="container">
+<p style="font-size:11pt;">The dataset is prepared by the Institute of Atmospheric Physics, the Chinese Academy of Sciences in collaboration with the Chinese University of Hong Kong and the University of Texas at Austin.</p>
+<p style="font-size:11pt;">
+The above open-access data are distributed under the terms of <a href="https://creativecommons.org/licenses/by/4.0/">the Creative Commons Attribution 4.0 International license (CC BY 4.0)</a>. </p>
+
+
+  <!-- FOOTER -->
+  <footer class=" bg-black text-white" style="font-size:10pt">
+    <div class="container">
+      <br>
+      <p>Contact us</p>
+      <li>Francis Tam: <a href="mailto:Francis.Tam@cuhk.edu.hk" style="color:inherit;">Francis.Tam@cuhk.edu.hk </a></li>
+      <li> <a href="https://www.cuhk.edu.hk/sci/essc/index.html" style="color:inherit;">Earth System Science Programme</a>, <a href="https://www.sci.cuhk.edu.hk/en-gb/" style="color:inherit;">Faculty of Science</a>, <a href="https://www.cuhk.edu.hk/chinese/index.html" style="color:inherit;">The Chinese University of Hong Kong</a></li>
+      <br>
+      <p>&copy; Atmospheric Dynamics Group &middot; Lastly Update Sep 2021 &middot; Generated by <a href="https://pages.github.com/" style="color:inherit;">GitHub Pages</a></p>
+      <p class="float-end"><a href="#" style="color:inherit;">Back to top</a></p>
+      <br>
+    </div>
+  </footer>
+</main>
+    <script src="https://AtmosphericDynamicsGroup.github.io/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
