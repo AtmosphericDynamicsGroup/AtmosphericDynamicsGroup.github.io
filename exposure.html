@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Atmospheric Dynamics Group">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Atmospheric Dyanmics Group</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://AtmosphericDynamicsGroup.github.io/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/favicon-16x16.png">
+<link rel="manifest" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/site.webmanifest">
+<link rel="mask-icon" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/csssafari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <!-- font family import -->
+<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap" rel="stylesheet">
+<link href="https://AtmosphericDynamicsGroup.github.io/css/carousel.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {       
+          font-size: 3.5rem;
+        }
+      }
+      
+      h1 {
+      	font-family:'Biryani', sans-serif;
+        font-weight: bold;
+        font-size:34pt;
+    }
+      h2 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      h3 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      h4 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      h5 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      p{
+        text-align:justify;
+        font-size:11pt;
+        }
+      body {
+      	font-family: 'Bitter', sans-serif;
+        color: #000000;
+        font-size:12pt;
+    }	
+      footer {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      ul {
+    margin-top: 0;
+  }
+      li {
+    margin-top: 0;
+  }
+  	  html, body {
+    height:0px;
+    padding:0;
+    margin:0;
+}
+      .carousel {
+          margin-bottom: 0rem;
+      }
+      hr.solid {
+  border-top: 5px solid #bbb;
+}
+.collapsible {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 21pt;
+  font-family: 'Bitter';
+  border-bottom: 0.1px solid;
+}
+.collapsible:after {
+  content: '\002B';
+  color: #555555;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+ .collapsible:hover {
+  background-color: #fff;
+}
+button.active:after {
+  content: "\2212";
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+    </style>
+
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+  
+<header>
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://atmosphericdynamicsgroup.github.io/"><img src="https://www.cuhk.edu.hk/sci/essc/images/ESSC_logo_t.gif" style="max-width:40px;"></a>      
+      <a class="navbar-brand" href="https://atmosphericdynamicsgroup.github.io/">Atmospheric Dynamics Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://atmosphericdynamicsgroup.github.io/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/group.html">Group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/teaching.html">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/opportunities.html">Opportunities</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-black" href="https://atmosphericdynamicsgroup.github.io/database.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Database
+        	</a>
+      		<div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+            	<a class="dropdown-item bg-black text-white" href="https://atmosphericdynamicsgroup.github.io/database.html">Contents</a>
+            <div class="dropdown-divider" style="border-color:white"></div>          
+            	<a class="dropdown-item bg-black text-white" href="https://atmosphericdynamicsgroup.github.io/database/cmip6.html">CMIP6</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://atmosphericdynamicsgroup.github.io/exposure.html">Exposure</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    </div>
+    <div class="carousel-inner">
+        <img style="max-height: 100vh; max-width100%; height: 340px; width: 100%; object-fit: cover; background-position: center;
+    background-size: cover;" src="https://AtmosphericDynamicsGroup.github.io/img/cloud-front-4624895_1920.jpg" class="img-fluid" alt="Responsive image">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 style="font-family:'Biryani', sans-serif; font-size:4.5vw; text-align:center;" ><b>Exposure</b></h1>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Jul 2021: <a href="https://www.facebook.com/CUHKofficial/posts/2915883468728277">【極端天氣 會否變成「新常態」？】</a></button>
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was interviewed by CUHK about the extreme weather issues under climate change.</p><p> 
+(Chinese text, Facebook Post)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Aug 2020: <a href="https://ol.mingpao.com/ldy/cultureleisure/culture/20200819/1597776156110/%E7%92%B0%E4%BF%9D%E6%84%8F%E8%AD%98-%E6%B8%9B%E7%A2%B3%E6%95%91%E5%9C%B0%E7%90%83-%E9%98%B2%E6%AD%A2%E9%A2%A8%E6%9A%B4%E5%A2%9E%E5%BC%B7">環保意識：減碳救地球 防止風暴增強 
+</a></button>
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was at the news interview sharing thoughts and concerns on the impacts of global warming on tropical cyclones, especially the effects on Hong Kong. </p><p>
+(Chinese text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">May 2020: <a href="https://www.iso.cuhk.edu.hk/english/publications/CUHKUPDates/article.aspx?articleid=2664">Coronavirus: A Boon to the Environment?
+</a></button>
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was in a news interview from CUHK providing analysis on the impact of COVID-19 on climate change. He said that COVID-19 was giving our planet a respite.</p><p>
+(Both Chinese and English text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Aug 2019: <a href="https://podcast.rthk.hk/podcast/item.php?pid=1556&eid=139699&lang=zh-CN">五夜講場 - 真係好科學 2019 - 天有可測之風雲
+</a></button>
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was in the video broadcast discussing the science behind weather phenomena, climate change and weather prediction.</p><p>
+(Cantonese only)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">May 2019: <a href="https://skypost.ulifestyle.com.hk/article/2350031/%E5%A4%A7%E6%B0%A3%E5%B1%A4%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3%E6%BF%83%E5%BA%A6%20300%E8%90%AC%E5%B9%B4%E6%96%B0%E9%AB%98">大氣層二氧化碳濃度 300萬年新高
+</a></button>
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was at the news interview sharing thoughts on the recent news about the new breaking record of carbon dioxide concentration in the atmosphere. </p><p>
+(Chinese text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Oct 2017: <a href="https://www.iso.cuhk.edu.hk/english/publications/CUHKUPDates/article.aspx?articleid=2009">Be Prepared for the Rainy Days, CUHK newsletter No.504 (Article)
+</a></button>
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was in the CUHK newsletter sharing his team's ongoing research on tropical cyclones using computer simulations and the impacts of these tropical cyclones and precipitation extremes on the Pearl River Delta region under global warming.</p><p>
+(Both Chinese and English text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Aug 2017: <a href="https://news.mingpao.com/ins/%e6%b8%af%e8%81%9e/article/20170826/s00001/1503721402366/%e3%80%90%e6%96%b0%e5%b8%b8%e6%85%8b-%e3%80%91%e4%b8%ad%e5%a4%a7%e5%ad%b8%e8%80%85-%e5%85%a8%e7%90%83%e6%9a%96%e5%8c%96%e5%8a%a0%e5%8a%87%e9%a2%a8%e6%9a%b4%e6%bd%ae-%e6%9c%aa%e4%be%86%e3%80%8c%e5%a4%a9%e9%b4%bf%e3%80%8d%e8%88%ac%e5%bd%b1%e9%9f%bf%e6%88%96%e6%af%8f%e5%b9%b4%e4%b8%80%e6%ac%a1">【新常態？】中大學者：全球暖化加劇風暴潮 未來「天鴿」般影響或每年一次 
+</a></button>
+<div class="content">
+<p></p>
+  <p>A press release featuring the audio broadcast "香港家書 中大地球系統科學課程助理教授譚志勇 全球暖化下風暴潮將成常態"</p><p>
+(Chinese text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Aug 2017:<a href="https://podcast.rthk.hk/podcast/item.php?pid=42&eid=98419&year=2017&list=1&display=all&lang=zh-CN"> 香港家書 中大地球系統科學課程助理教授譚志勇 全球暖化下風暴潮將成常態
+</a></button>
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was in the audio broadcast analyzing the recent storm surges and the corresponding tropical cyclones. He was also concerned about the impact of these on Hong Kong under global warming.</p><p>
+(Cantonese only)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Jan 2017:
+<a href="https://www.iso.cuhk.edu.hk/english/publications/sustainable-campus/article.aspx?articleid=64656">The Science behind Extreme Weather, Sea Level Rise and Storm Surges
+</a></button> 
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was in the CUHK "Sustainable Campus" sharing the science behind extreme weather, sea level rise and storm surges.</p><p>
+(Both Chinese and English text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">2016:<a href="https://www.iso.cuhk.edu.hk/images/publication/archive/bulletin/201601/html5/english/7/"> Nature may drop hints on Intensified Precipitation
+</a></button> 
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was in the CUHK bulletin featuring the research conducted by his team with the collaboration with Hong Kong Observatory that was published on Geophysical Research Letters (Mar 2016), entitled "Sensitivity of urban rainfall to anthropogenic heat flux - a numerical experiment".</p><p>
+(Both Chinese and English text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col">
+<button type="button" class="collapsible">Nov 2015: <a href="https://www.cuhk.edu.hk/sci/essc/seminar/Francis_20151128.pdf">暴雨增密 港變澤港
+</a></button> 
+<div class="content">
+<p></p>
+  <p>Prof. Francis Tam was in the press mentioning the recent research from his team and Hong Kong Observatory studying the future possible precipitation extremes under global warming. Another research on storm surges, also conducted together with Hong Kong Observatory was mentioned as well.</p><p>
+(Chinese text)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+
+  <!-- FOOTER -->
+  <footer class=" bg-black text-white" style="font-size:10pt">
+    <div class="container">
+      <br>
+      <p>Contact us</p>
+      <li>Francis Tam: <a href="mailto:Francis.Tam@cuhk.edu.hk" style="color:inherit;">Francis.Tam@cuhk.edu.hk </a></li>
+      <li> <a href="https://www.cuhk.edu.hk/sci/essc/index.html" style="color:inherit;">Earth System Science Programme</a>, <a href="https://www.sci.cuhk.edu.hk/en-gb/" style="color:inherit;">Faculty of Science</a>, <a href="https://www.cuhk.edu.hk/chinese/index.html" style="color:inherit;">The Chinese University of Hong Kong</a></li>
+      <br>
+      <p>&copy; Atmospheric Dynamics Group &middot; Lastly Update Sep 2021 &middot; Generated by <a href="https://pages.github.com/" style="color:inherit;">GitHub Pages</a></p>
+      <p class="float-end"><a href="#" style="color:inherit;">Back to top</a></p>
+      <br>
+    </div>
+  </footer>
+</main>
+    <script src="https://AtmosphericDynamicsGroup.github.io/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+  </body>
+</html>
+
