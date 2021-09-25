@@ -1,1 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Atmospheric Dynamics Group">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Atmospheric Dyanmics Group</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://AtmosphericDynamicsGroup.github.io/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/favicon-16x16.png">
+<link rel="manifest" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/site.webmanifest">
+<link rel="mask-icon" href="https://AtmosphericDynamicsGroup.github.io/favicon_package/csssafari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <!-- font family import -->
+<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap" rel="stylesheet">
+<link href="https://AtmosphericDynamicsGroup.github.io/css/carousel.css" rel="stylesheet">
+    <style>
+      td {
+        word-break: break-all;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {       
+          font-size: 3.5rem;
+        }
+      }
+      
+      h1 {
+      	font-family:'Biryani', sans-serif;
+        font-weight: bold;
+        font-size:34pt;
+    }
+      h2 {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      h3 {
+      	font-family: 'Bitter', sans-serif;
+        font-size:18pt;
+    }	
+      h4 {
+      	font-family: 'Bitter', sans-serif;
+        font-size:15pt;
+    }	
+      h5 {
+      	font-family: 'Bitter', sans-serif;
+        font-size:11pt;
+        text-align:center;
+    }	
+      p{
+        text-align:justify;
+        font-size:11pt;
+        }
+      body {
+      	font-family: 'Bitter', sans-serif;
+        color: #000000;
+        font-size:12pt;
+    }	
+      footer {
+      	font-family: 'Montserrat', sans-serif;
+    }	
+      ul {
+    margin-top: 0;
+  }
+      li {
+    margin-top: 0;
+  }
+  	  html, body {
+    height:0px;
+    padding:0;
+    margin:0;
+}
+      .carousel {
+          margin-bottom: 0rem;
+      }
+      hr.solid {
+  border-top: 5px solid #bbb;
+}
+ #center {    
+ text-align: center;  
+ }  
+ #right {    
+ text-align: right;  
+ }  
+.collapsible {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15pt;
+  font-family: 'Bitter';
+  border-left: 0;
+  border-bottom: 0.1px solid;
+  margin:0;
+}
+.collapsible:after {
+  content: '\002B';
+  color: #555555;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+ .collapsible:hover {
+  background-color: #fff;
+}
+button.active:after {
+  content: "\2212";
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: auto;
+  background-color: #fff;
+}
+a {
+  color: inherit;
+}
+img {
+    max-width: 100%;
+}
+    </style>
+
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+  
+<header>
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://atmosphericdynamicsgroup.github.io/"><img src="https://www.cuhk.edu.hk/sci/essc/images/ESSC_logo_t.gif" style="max-width:40px;"></a>      
+      <a class="navbar-brand" href="https://atmosphericdynamicsgroup.github.io/">Atmospheric Dynamics Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://atmosphericdynamicsgroup.github.io/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://atmosphericdynamicsgroup.github.io/group.html">Group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/teaching.html">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/opportunities.html">Opportunities</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-black" href="https://atmosphericdynamicsgroup.github.io/database.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Database
+        	</a>
+      		<div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+            	<a class="dropdown-item bg-black text-white" href="https://atmosphericdynamicsgroup.github.io/database.html">Contents</a>
+            <div class="dropdown-divider" style="border-color:white"></div>          
+            	<a class="dropdown-item bg-black text-white" href="https://atmosphericdynamicsgroup.github.io/database/cmip6.html">CMIP6</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://atmosphericdynamicsgroup.github.io/exposure.html">Exposure</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    </div>
+    <div class="carousel-inner">
+        <img style="max-height: 100vh; max-width100%; height: 340px; width: 100%; object-fit: cover; background-position: center;
+    background-size: cover;" src="https://AtmosphericDynamicsGroup.github.io/img/wallpaperflare.com_wallpaper.jpg" class="img-fluid" alt="Responsive image">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 style="font-family:'Biryani', sans-serif; font-size:4.5vw; text-align:center;" ><b>Group</b></h1>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+<br><br>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-3">
+<img src="https://AtmosphericDynamicsGroup.github.io/img/group/King.jpg" width=266.41px height=auto class="img-fluid" alt="Responsive image">
+<br><br>
+<table><td>
+<p>Email:<br><a href="mailto:khlau@link.cuhk.edu.hk">khlau@link.cuhk.edu.hk</a></p>
+</td></table>
+</div>
+<div class="col">
+<hr class="solid">
+<h1>King Heng LAU</h1>
+<hr class="solid">
+<p>King Heng LAU is an undergraduate student at CUHK, majoring in Earth System Science (Atmospheric Science Stream). Born and raised in Hong Kong, King Heng developed an interest in meteorology since he was small. He is generally interested in tropical meteorology, in particular tropical cyclones which sometimes bring gales and downpours to the city. King Heng is currently in his final year of his undergraduate studies and is expecting to graduate in 2022. He would like to pursue a research career in Atmospheric Science with the hope to help mitigate the impacts of extreme weather under climate change.</p>
+<p><b>Research Interests:</b></p>
+<ul>
+<li>Physics and dynamics of tropical cyclones</li>
+<li>Future predictability and variability of tropical cyclones under climate change</li>
+</ul>
+
+</div>
+<div class="row">
+<p><b>Recent Research Projects:</b></p>
+<p>(All figures below are subject to copyright, and are allowed to be used only with permission from the owner.)</p>
+<p style="text-align:center;"><b><u>Numerical Investigation of the Eyewall Evolution in Landfalling Tropical Cyclones (TCs)</u></b></p>
+
+<p>This project is supervised by Prof. Chun-Chieh Wu at the National Taiwan University Typhoon Dynamics Research Center as part of a (remote) summer research visit.</p><p>
+The study aims to <b>investigate the eyewall evolution of Typhoon Mangkhut through numerical simulations using the Weather Research and Forecasting Model (WRF).</b> Mangkhut’s eyewall contracted before landfall over Luzon, broke down after landfall, and a much larger eyewall formed as Mangkhut re-entered the ocean (Fig. 1). Similar phenomena have already been observed in historical TCs making landfall over Luzon. Examples include TC Zeb (1998) [1] and TC Megi (2010) [2]. </p><p>
+<b>The role of terrain, land surfaces, and ocean on the observed eyewall evolution in Mangkhut will be investigated through carefully designed sensitivity experiments.</b> It is hoped that research results will lead to <b>better understanding of the effects of land surfaces on the eyewall evolution of TCs, and hopefully improve future intensity forecasts for landfalling TCs.</b> 
+</p>
+</div>
+<div class="row">
+<div class="col-9">
+<img src="https://AtmosphericDynamicsGroup.github.io/img/research/King_Fig.png" width=888px height=auto class="img-fluid" alt="Responsive image">
+</div>
+<div class="col">
+<p><i>Fig 1. Radar reflectivity (unit: dBZ) at the lowest model level from 4 September 10:00 UTC to 15 September 08:00 UTC 2018 in two-hourly intervals. The contraction and breakdown of the original eyewall and the formation of a new, much larger eyewall is observed.</i>
+</p>
+</div>
+</div>
+<div class="row">
+<p></p>
+<p>[1] Wu, C. C., Cheng, H. J., Wang, Y., & Chou, K. H. (2009). A numerical investigation of the eyewall evolution in a landfalling typhoon. Monthly weather review, 137(1), 21-40.<br>
+[2] Wang, H., & Wang, Y. (2021). A Numerical Study of Typhoon Megi (2010). Part II: Eyewall Evolution Crossing the Luzon Island. Monthly Weather Review, 149(2), 375-394.</p>
+<p><b>Publications:</b></p>
+<p>Lui, Y. S., Tse, L. K. S., Tam, C. Y., Lau, K. H., & Chen, J. (2021). Performance of MPAS-A and WRF in predicting and simulating western North Pacific tropical cyclone tracks and intensities. <i>Theoretical and Applied Climatology, 143(1)</i>, 505-520.</p>
+
+
+<section>
+<div class="container">
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a href="https://atmosphericdynamicsgroup.github.io/group.html" class="btn btn-primary me-md-2" role="button">Back</a>
+</div>
+</div>
+</section>
+<br>
+
+  <!-- FOOTER -->
+  <footer class=" bg-black text-white" style="font-size:10pt">
+    <div class="container">
+      <br>
+      <p>Contact us</p>
+      <li>Francis Tam: <a href="mailto:Francis.Tam@cuhk.edu.hk" style="color:inherit;">Francis.Tam@cuhk.edu.hk </a></li>
+      <li> <a href="https://www.cuhk.edu.hk/sci/essc/index.html" style="color:inherit;">Earth System Science Programme</a>, <a href="https://www.sci.cuhk.edu.hk/en-gb/" style="color:inherit;">Faculty of Science</a>, <a href="https://www.cuhk.edu.hk/chinese/index.html" style="color:inherit;">The Chinese University of Hong Kong</a></li>
+      <br>
+      <p>&copy; Atmospheric Dynamics Group &middot; Lastly Update Sep 2021 &middot; Generated by <a href="https://pages.github.com/" style="color:inherit;">GitHub Pages</a></p>
+      <p class="float-end"><a href="#" style="color:inherit;">Back to top</a></p>
+      <br>
+    </div>
+  </footer>
+</main>
+    <script src="https://AtmosphericDynamicsGroup.github.io/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+  </body>
+</html>
+
+
 
