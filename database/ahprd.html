@@ -156,7 +156,7 @@
     background-size: cover;" src="https://AtmosphericDynamicsGroup.github.io/img/database_banner.jpg" class="img-fluid" alt="Responsive image">
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1 style="font-family:'Biryani', sans-serif; font-size:4.5vw; text-align:center;" ><b>Bias-corrected CMIP6 Data</b></h1>
+            <h1 style="font-family:'Biryani', sans-serif; font-size:2.1vw; text-align:center;" ><b>Dynamical downscaling data for the Influence of Global Warming and Urban Anthropogenic Heat on Extreme Precipitation in Urbanized Pearl River Delta Area</b></h1>
           </div>
         </div>
     </div>
@@ -169,7 +169,7 @@
   <div class="row">
     <div class="col text-center">
     <br>
-    <a href="https://cloud.itsc.cuhk.edu.hk/mycuform/view.php?id=1192011" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true" target="_blank" rel="noopener noreferrer">Download Application</a>
+    <a href="https://cloud.itsc.cuhk.edu.hk/mycuform/view.php?id=1390628" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true" target="_blank" rel="noopener noreferrer">Download Application</a>
     <a href="https://AtmosphericDynamicsGroup.github.io/ToU.html" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true" target="_blank" rel="noopener noreferrer">Terms of Use</a>
     </div>
   </div>
@@ -182,20 +182,12 @@
 <h1 style="font-size:21pt;">Description
 </h1>
 <br>
-<p style="font-size:11pt;">The bias-corrected CMIP6 global dataset for dynamical downscaling of the Earth’s historical and future climate (1979–2100) is now available. This dataset provides high-quality large-scale forcing for dynamical downscaling simulations and will improve the reliability of future projections of the regional climate and environment.</p>
+<p style="font-size:11pt;">This study compares the impacts of global warming and intense urban anthropogenic heat (AH) on extreme hourly precipitation over the Pearl River Delta (PRD) megacity, located in coastal South China. The datasets were generated using the cloud-resolving Weather Research and Forecasting (WRF) model version 3.8.1 coupled with the single-layer urban canopy model (SLUCM). Boundary conditions were derived from PRD extreme rainfall episodes, identified from the Geophysical Fluid Dynamics Laboratory Earth System Model (GFDL-ESM2M) historical and RCP8.5 runs. The innermost domain with spatial resolution of 2km were archived. </p>
 <p style="font-size:11pt;">
-The traditional dynamical downscaling introduces biases that come from the boundary. To correct the biases, a series of steps are carried out. The method of correction decomposes the General Circulation Model (GCM) and reanalysis data into long-term trends and anomalies.</p>
+Four downscaling experiments were carried out: 1) zero AH under historical climate condition, 2) 300 W/m2 as diurnal maximum AH values prescribed over PRD urban grids under historical climate condition, 3) zero AH under projected climate representative concentration pathway (RCP) 8.5 climate condition, and 4) 300 W/m2 as diurnal maximum AH under RCP8.5 climate condition. Hourly variables (e.g. 2m temperature, 10m wind, rain, etc.) required to drive hydrological models (e.g. WRF-Hydro) were archived.</p>
 
-<p style="font-size:11pt;">The long-term trends are computed using the multimodel ensemble (MME) mean derived from 18 CMIP6 models over historical and future time periods. In order to preserve the internal climate variability,  one of the CMIP6 models is used to compute the anomalies. The high-resolution version of the MPI-M Earth system model (MPI-ESM1-2-HR), which is configured with a horizontal grid spacing of 100km in the atmosphere and 40km in the ocean, is used to produce the weather and interannual variability of the six-hourly large-scale forcing data. The data contain the upper air temperature, zonal wind, meridional wind, relative humidity, geopotential height, surface pressure, sea-level pressure, and sea surface temperature. The reanalysis dataset from 1979 to 2014 is retrieved from ECMWF ERA5. Both datasets were re-gridded to a horizontal grid spacing of (1.25° x 1.25°) using bilinear interpolation.
-</p>
-<p style="font-size:11pt;"><i><b>GCM variance bias corrections</b></i></p>
-<p style="font-size:11pt;">The two datasets (GCM and ERA) can then be broken down into a long-term non-linear trend and an interannual perturbation term for each six-hour period and day of the year. The non-linear trend was computed using the ensemble empirical model decomposition (EEMD) method, excluding the long-term non-linear trend in the perturbation term. Since GCM may contain bias, that is measured by the ratio of the GCM variance to the reanalysis variance, in the amplitude of the interannual variations. In order to correct the variance bias, a scaling factor, which is the ratio of the standard deviation of the detrended reanalysis data to that of the detrended GCM data over the historical time period, can be multiplied to the perturbation term by assuming the variance bias remains the same from the historical period to a future period. Since the standard deviations are computed using the detrended data, the variance of the interannual and interdecadal variations are adjusted so that the non-linear trend remained unchanged. It is noted that the anomaly of the detrended HCM data at each six-hourly interval/day of the year is computed by subtracting the climatological mean of the detrended data from the detrended GCM data, before correcting the variance biases. The standard deviation of each six-hour interval and day of the year was calculated across 36 years from 1979 to 2014. The original standard deviation with all 36 years of data is first computed. Then the standard deviation is recalculated after removing the years with anomalies greater than three times of the original standard deviation. This helps remove the effects of the extreme events on the data, for instance, the unrealistic ratios of the standard deviation.</p>
-<p style="font-size:11pt;"><i><b>GCM mean bias correction
-</i></b></p>
-<p style="font-size:11pt;">After that, the long-term non-linear trend derived from the single GCM is replaced by that derived from the MME, so the GCM data is then the sum of the long-term non-linear trend derived from MME with the EEMD over the historical-future time period and the GCM perturbation term multiplied by the scaling factor. The mean bias of the long-term trend of the GCM data relative to that of the reanalysis dataset over the historical period is removed to correct the GCM mean bias. Therefore, the bias-corrected six-hourly GCM data over the future period have a base climate provided by the reanalysis dataset over the historical period, with the change in future climate relative to the historical climatology generated by the MME and the future bias-corrected weather and climate variability derived from a single GCM.</p>
-<p style="font-size:11pt;">It is noted that the long-term non-linear trends are assumed to remain the same for each six-hourly/daily value of variables within the same month to save the computing time when using EEMD method for computing the non-linear trend. Thus, the climatological mean of the detrended data is not zero because the GCM outputs and the long-term non-linear GCM trend are derived from six-hourly data and monthly data respectively. </p>
 <p style="font-size:11pt; text-align:left">For details, please refer to :<br>
-Xu, Z., Y. Han, C.-Y. Tam, Z.-L. Yang and C. Fu, 2021: A bias-corrected CMIP6 global dataset. for dynamical downscaling of future climate, 1979–2100, <i>Scientific Data, </i> <a href="https://www.nature.com/articles/s41597-021-01079-3">doi: 10.1038/s41597-021-01079-3.</a>
+Fung, K., Tam, C., Lee, T. and Wang, Z., 2021. Comparing the Influence of Global Warming and Urban Anthropogenic Heat on Extreme Precipitation in Urbanized Pearl River Delta Area Based on Dynamical Downscaling. <i>Journal of Geophysical Research: Atmospheres</i>, 126(21), <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JD035047">doi: 10.1029/2021JD035047</a>.
 <br> </p>
 <br>
 <hr class="solid">
@@ -219,21 +211,15 @@ Your request will be processed shortly once it is received. The processing time 
 <h1 style="font-size:21pt;">Data Information
 </h1>
 <br>
-<p style="font-size:11pt;">The whole dataset is about 2 TB large.</p>
-<p style="font-size:11pt;">Please read the README.txt file to see the detailed descriptions for each folder. The data files in <span style="font-family:'Courier New';">.nc4</span> format and some scripts in FORTRAN are provided.</p>
-
-<p style="font-size:11pt;">Please note that two attributes, <span style="font-family:'Courier New';">scale_factor</span> and <span style="font-family:'Courier New';">add_offset</span>, should be used to unpack the variables of the compressed NetCDF data.</p>
-
-<p style="font-size:11pt;">A FORTRAN code is provided to convert the compressed NetCDF files to WRF intermediate files. The scripts for correcting the CMIP6 data biases are also provided in the dataset.</p>
-
-<p style="font-size:11pt;">For detailed usage of the files, please refer to the "Usage Notes" Section in the <a href="https://www.nature.com/articles/s41597-021-01079-3">paper</a>.</p>
+<p style="font-size:11pt;">The whole dataset is about 589 GB large.</p>
+<p style="font-size:11pt;">Please read the README file to see the detailed descriptions for each file.</p>
 <hr class="solid">
 </div>
 </section>
 
 <section>
 <div class="container">
-<p style="font-size:11pt;">The dataset is prepared by the Institute of Atmospheric Physics, the Chinese Academy of Sciences in collaboration with the Chinese University of Hong Kong and the University of Texas at Austin.</p>
+
 
 <p style="font-size:11pt;">
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a> The above open-access data are distributed under the terms of  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International License</a>.</p>
@@ -248,7 +234,7 @@ Your request will be processed shortly once it is received. The processing time 
       <li>Francis Tam: <a href="mailto:Francis.Tam@cuhk.edu.hk" style="color:inherit;">Francis.Tam@cuhk.edu.hk </a></li>
       <li> <a href="https://www.cuhk.edu.hk/sci/essc/index.html" style="color:inherit;">Earth System Science Programme</a>, <a href="https://www.sci.cuhk.edu.hk/en-gb/" style="color:inherit;">Faculty of Science</a>, <a href="https://www.cuhk.edu.hk/chinese/index.html" style="color:inherit;">The Chinese University of Hong Kong</a></li>
       <br>
-      <p>&copy; Atmospheric Dynamics Group &middot; Lastly Update Nov 2021 &middot; Generated by <a href="https://pages.github.com/" style="color:inherit;">GitHub Pages</a></p>
+      <p>&copy; Atmospheric Dynamics Group &middot; Lastly Update Dec 2021 &middot; Generated by <a href="https://pages.github.com/" style="color:inherit;">GitHub Pages</a></p>
       <p class="float-end"><a href="#" style="color:inherit;">Back to top</a></p>
       <br>
     </div>
