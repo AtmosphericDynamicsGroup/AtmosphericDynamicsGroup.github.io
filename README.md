@@ -1,4 +1,4 @@
-## Welcome to Atmospheric Dyanmics Group
+## Welcome to Atmospheric Dynamics Group
 
 We are from the Earth System Science Programme at the Chinese University of Hong Kong. 
 
